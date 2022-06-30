@@ -55,9 +55,8 @@ Three models are available in this repository:
 ### Fine-tuning Results
 | Pre-train Objective | Dataset | WER | Classification Accuracy |
 | --- | --- | --- | --- |
-| RFP | Common Voice | 6.45 | --- |
-| Masking | Common Voice | 8.45 | --- |
-| --- | --- | --- | --- |
+| RFP | Common Voice | 6.45 | - |
+| Masking | Common Voice | 8.45 | - |
 | RFP | Common Voice + RAN's Samples | 4.56 | 0.98 |
 | Masking | Common Voice + RAN's Samples | 5.15 | 0.87 |
 | RFP | Common Voice + Meaningless Words's Samples | 4.12 | 0.99 |
