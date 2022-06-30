@@ -87,7 +87,6 @@ Three models are available in this repository:
 | Librispeech | [download](https://www.openslr.org/12) |
 | CommonVoice Persian | [download]("https://voice-prod-bundler-ee1969a6ce8178826482b88e843c335139bd3fb4.s3.amazonaws.com/cv-corpus-7.0-2021-07-21/cv-corpus-7.0-2021-07-21-fa.tar.gz) |
 | Ours | [download](https://drive.google.com/file/d/1clQeyxTurtOu7r39q-CmSmHNapwDDE6u/view?usp=sharing) |
-| --- | --- |
 
 To download `CommonVoice` for other languages, please see <a href="https://github.com/huggingface/datasets/blob/master/datasets/common_voice/common_voice.py">here</a>.
 
