@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/automatic-speech-recognition-for-speech/speech-recognition-on-common-voice-persian)](https://paperswithcode.com/sota/speech-recognition-on-common-voice-persian?p=automatic-speech-recognition-for-speech)
+
 # Automatic Speech recognition for Speech Assessment of Persian Preschool Children
 
 ## Abstract
