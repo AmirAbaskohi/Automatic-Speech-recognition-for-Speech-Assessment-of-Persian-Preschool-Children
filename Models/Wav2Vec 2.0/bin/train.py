@@ -2,7 +2,7 @@
 Run this script to launch training
 
 EXAMPLE:
-    >>> TPU_NAME=YOUR_TPU BUCKET_NAME=YOUR_BUCKET python3 train.py
+    >>> TPU_NAME=YOUR_TPU BUCKET_NAME=YOUR_BUCKET DATA_PATH=DATA_PATH python3 train.py
 
 """
 
