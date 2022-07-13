@@ -15,4 +15,5 @@ typeguard
 datasets
 librosa
 pickle
+datasets
 SpeechRecognizer
