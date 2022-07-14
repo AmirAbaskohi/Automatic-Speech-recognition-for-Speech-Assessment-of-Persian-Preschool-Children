@@ -3,7 +3,7 @@
 # Automatic Speech recognition for Speech Assessment of Persian Preschool Children
 
 ## Abstract
-Preschool evaluation is crucial because it gives teachers and parents crucial knowledge about a children's growth and development. The coronavirus pandemic has highlighted the necessity for preschool children to be assessed online. This online testing requires a variety of technologies, from web application development to various artificial intelligence models in diverse criteria such as speech recognition. Because of the acoustic fluctuations and differences in voice frequencies between children and adults, employing Automatic Speech Recognition(ASR) systems is difficult because they are pre-trained on adults' voices. In addition, training a new model requires a large amount of data. To solve this issue, we constructed an ASR for our cognitive test system using the Wav2Vec 2.0 model with a new pre-training objective, called Random Frequency Pitch(RFP), and our new dataset, which was tested on Meaningless Words(MW) and Rapid Automatic Naming(RAN) tests. Due to the peculiarities of these two tests, we explored numerous models, including Convolutional Neural Network(CNN) and Wav2Vec 2.0 models. Our new approach, reaches Word Error Rate(WER) of 6.45 on the Persian section of CommonVoice dataset. Furthermore our novel methodology produces positive outcomes in zero- and few-shot scenarios.
+Preschool evaluation is crucial because it gives teachers and parents crucial knowledge about a children's growth and development. The coronavirus pandemic has highlighted the necessity of online assessment for preschool children. This online testing requires various technologies, from web application development to various artificial intelligence models in various criteria such as speech recognition. Because of the acoustic fluctuations and differences in voice frequencies between children and adults, employing Automatic Speech Recognition(ASR) systems is difficult because they are pre-trained on adults' voices. In addition, training a new model requires a large amount of data. We constructed an ASR for our cognitive test system to solve this issue using the Wav2Vec 2.0 model with a new pre-training objective called Random Frequency Pitch(RFP). In addition, we used our new dataset to fine-tune our model for Meaningless Words(MW) and Rapid Automatic Naming(RAN) tests. Due to the peculiarities of these two tests, we explored numerous models, including Convolutional Neural Network(CNN) and Wav2Vec 2.0 models. Our new approach reaches a Word Error Rate(WER) of 6.45 on the Persian section of the CommonVoice dataset. Furthermore, our novel methodology produces positive outcomes in zero- and few-shot scenarios.
 
 ## Assessments
 In our system, ASR is required for two tests. The first test is called Rapid Automatic Naming(RAN). The RAN task is
@@ -52,13 +52,23 @@ Three models are available in this repository:
 
 ![image](https://user-images.githubusercontent.com/50926437/156013711-dfafdd0d-7670-45a5-bbf2-127fb416f94b.png)
 
+## How to run?
+There is a notebook which helps you to run `Wav2Vec 2.0` model. This notebook exists in `Model/Wav2Vec 2.0` directory. Also I suggest you to see the related codes to change wanted parameters.
+
+To run CNN classifier model, you first need to use `Model/VAD` files to create the data needed for the model. Then you can train the model using the following command in `Model/CNN`:
+```
+python3 main.py
+```
+
 ## Result
 
 ### Fine-tuning Results
 | Pre-train Objective | Dataset | WER | Classification Accuracy |
 | --- | --- | --- | --- |
-| RFP | Common Voice | 6.45 | - |
-| Masking | Common Voice | 8.45 | - |
+| RFP | Common Voice Persian | 6.45 | - |
+| Masking | Common Voice Persian | 8.45 | - |
+| RFP | LibriSpeech test-clean | 1.35 | - |
+| Masking | LibriSpeech test-clean | 1.79 | - |
 | RFP | Common Voice + RAN's Samples | 4.56 | 0.98 |
 | Masking | Common Voice + RAN's Samples | 5.15 | 0.87 |
 | RFP | Common Voice + Meaningless Words's Samples | 4.12 | 0.99 |
