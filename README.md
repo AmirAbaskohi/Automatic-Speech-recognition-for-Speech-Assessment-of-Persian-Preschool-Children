@@ -51,7 +51,7 @@ Three models are available in this repository:
 ![image](https://user-images.githubusercontent.com/50926437/156013711-dfafdd0d-7670-45a5-bbf2-127fb416f94b.png)
 
 ## How to run?
-There is a notebook which helps you to run `Wav2Vec 2.0` model. This notebook exists in `Model/Wav2Vec 2.0` directory. Also I suggest you to see the related codes to change wanted parameters.
+There is a notebook which helps you to run `Wav2Vec 2.0-Base` model. This notebook exists in `Model/Wav2Vec 2.0` directory. Also I suggest you to see the related codes to change wanted parameters.
 
 To run CNN classifier model, you first need to use `Model/VAD` files to create the data needed for the model. Then you can train the model using the following command in `Model/CNN`:
 ```
