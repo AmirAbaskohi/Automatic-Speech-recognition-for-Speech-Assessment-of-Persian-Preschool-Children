@@ -101,7 +101,7 @@ To download `CommonVoice` for other languages, please see <a href="https://githu
 
 
 ## Citation
-```
+```bibtex
 @article{abaskohi2022automatic,
   title={Automatic Speech recognition for Speech Assessment of Preschool Children},
   author={Abaskohi, Amirhossein and Mortazavi, Fatemeh and Moradi, Hadi},
